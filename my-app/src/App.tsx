@@ -2,6 +2,9 @@ import React from 'react';
 import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
 import './App.css';
+import { Add } from './features/addCharacter/addCharacter';
+import { List } from './features/list/list';
+import HomePage from './pages/home';
 
 function App() {
   return (
@@ -9,9 +12,6 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Counter />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
         <span>
           <span>Learn </span>
           <a
@@ -51,6 +51,7 @@ function App() {
           </a>
         </span>
       </header>
+      <HomePage></HomePage>
     </div>
   );
 }
